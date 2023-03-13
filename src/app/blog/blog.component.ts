@@ -14,7 +14,16 @@ export class BlogComponent implements OnInit {
 
   constructor(private service: GetdataService, private http: HttpClient,private formbuilder:FormBuilder) { }
 
+
+
+
   ngOnInit(): void {
+
+
+    this.service.getUserData().subscribe((mydata) => {
+         this.mydata = mydata;
+       });
+
 this.details=this.formbuilder.group({
     //blogdetails 
   // this.service.getUserData().subscribe((mydata) => {

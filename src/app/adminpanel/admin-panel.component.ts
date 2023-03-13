@@ -66,14 +66,7 @@ isAdmin:any=false;
           else {
             this.isAdmin = false;
           }
-      
-      
-      
-
-
-          
-          
-
+                     
           
         }
 
